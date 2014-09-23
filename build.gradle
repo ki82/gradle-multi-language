@@ -1,7 +1,14 @@
 apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'cpp'
+apply plugin: 'eclipse'
 
 task wrapper(type: Wrapper) {
      gradleVersion = '2.1'
+}
+
+executables {
+	Batman {}
 }
 
 repositories {
@@ -9,5 +16,5 @@ repositories {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.11'
+	compile 'org.scala-lang:scala-library:2.11.1'
 }
