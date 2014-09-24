@@ -1,5 +1,0 @@
-package superheroes;
-
-class SpiderMan {
-
-}
